@@ -1,0 +1,24 @@
+    
+
+    		[ 				
+    				{ 
+ 						"name" :"About Me",
+ 						"address" :"/abt"
+ 					},
+
+ 					{ 
+ 						"name" :"Project",
+ 						"address" :"/pro"
+ 					},
+
+ 					{ 
+ 						"name" :"Qualification",
+ 						"address" :"/qual"
+ 					},
+
+ 					{ 
+ 						"name" :"Contact Me",
+ 						"address" :"/co" 						
+ 					}
+
+ 			]

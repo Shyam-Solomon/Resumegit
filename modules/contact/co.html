@@ -1,0 +1,39 @@
+<div class="container">
+<div class="row">
+ <div ng-controller="ctctrl">
+      <div class="col-md-4">
+        <b><h1>Home</h1></b>
+        <div class="well">
+        S2 Jayam Yamunalakshmi Homes<br>
+        No 7, Venkatesan Street<br>
+        New Perungalathur<br>
+        Chennai-600 063
+        </div>
+          <div class="well">Phone No:+91 8608112290<br>
+          Mail Id:shyamsolomon94@gmail.com
+         </div>
+      </div>
+    <div class="col-md-8">
+  <style>
+      #map {
+        height: 320px;
+        width: 100%;
+       }
+    </style>
+        <h3>My Location</h3> 
+
+    <div id="map"></div>
+    </div>
+  <div class="col-md-4">
+  <br>
+        <label>Enter the Name :</label><br>
+        <input type="text" ng-model="user.fname" placeholder="Enter name"><br>
+        <label>Enter the Email-ID :</label><br>
+        <input type="email" ng-model="user.email" placeholder="Enter email"><br>
+        <label>Enter the Message :</label><br>
+        <input type="text" ng-model="user.msg" placeholder="Enter the Message"><br>
+        <button ng-click="myFunction(user)" value="submit">Submit</button>
+  </div>
+ </div>
+</div>
+</div>

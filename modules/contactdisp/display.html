@@ -1,0 +1,39 @@
+<div ng-controller="disctrl">
+<div class="container">
+<div class="col-md-10">
+<h2> Welcome</h2>
+<style>
+table, th , td  {
+  border: 2px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+</style>
+
+<table class="table">
+  <tr>
+    <th>ID</th>
+    <th>Name</th> 
+    <th>Email</th>
+    <th>Message</th>
+    <th>Delete</th>
+
+  </tr>
+  <tr ng-repeat="x in contact | orderBy : 'fname'"">
+    <td>{{x._id}}</td>
+    <td>{{x.fname}}</td>
+    <td>{{x.email | lowercase }}</td>
+    <td>{{x.msg}}</td>
+    <td><button ng-click="delrow(x._id)" class="btn btn-info"><span class="glyphicon glyphicon-trash"> Delete</button></td>
+  </tr>
+ </div>
+</table>
+</div>
+</div>
+</div>

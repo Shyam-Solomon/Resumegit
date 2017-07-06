@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="resume">
+ <head >
+  <title>Shyam Solomon</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular-route.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMKVZSlKUEV-fYxT95nBENSYMQbkKqGYw"></script>
+  <base href='/'>
+  </head>
+ <body>
+ <div class="container-fluid">
+ <nav class="navbar navbar-default">
+      <b>
+      <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <a class="navbar-brand" href="./home"><span class="glyphicon glyphicon-home"></span> Home <span class="sr-only">(current)</span></a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div ng-controller="navCtrl">
+      <ul class="nav navbar-nav">
+          <li ng-repeat="x in navbar" ><a href="{{x.address}}"><span class="{{x.icon}}"></span> {{x.name}}</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">      
+          <li><a href="/signin"><span class="glyphicon glyphicon-user"></span> Sign In</a></li>
+      </ul>
+      </div>
+    </div><!-- /.navbar-collapse -->
+  </b> </nav>
+  </div>
+  <div ng-view>  </div>
+  <script src="/script.js"></script>
+  <script src="/modules/contact/js/contact.js"></script>
+  <script src="/modules/hobbies/js/hobbies.js"></script>
+  <script src="/modules/signin/js/signin.js"></script>
+  <script src="/modules/contactdisp/js/display.js"></script>
+   </body>
+ </html>
