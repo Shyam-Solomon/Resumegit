@@ -29,7 +29,10 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <div ng-controller="navCtrl">
       <ul class="nav navbar-nav">
-          <li ng-repeat="x in navbar" ><a href="{{x.address}}"><span class="{{x.icon}}"></span> {{x.name}}</a></li>
+        <li><a href="/abt"><span class="glyphicon glyphicon-user"></span> About Me </a></li>
+        <li><a href="/qual"><span class="glyphicon glyphicon-tags"> Qualification </a></li>
+        <li><a href="/pro"><span class="glyphicon glyphicon-tags"> Project </a></li>
+        <li><a href="/co"><span class="glyphicon glyphicon-comment"> Contact Me</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">      
           <li><a href="/signin"><span class="glyphicon glyphicon-user"></span> Sign In</a></li>
