@@ -1,4 +1,4 @@
-var app = angular.module("resume", ["ngRoute","contactapp","hobapp","signinapp","contactdisplay"]);
+var app = angular.module("resume", ["ngRoute","contactapp","signinapp"]);
 app.config(function($routeProvider,$locationProvider) {
     $routeProvider
     .when("/abt", {
@@ -13,26 +13,15 @@ app.config(function($routeProvider,$locationProvider) {
     .when("/qual", {
         templateUrl : "/modules/qual/qual.html"
     })
-    .when("/mypic", {
-        templateUrl : "/modules/media/mypic.html"
-    })
     .when("/co", {
         templateUrl : "/modules/contact/co.html",
         controller: "ctctrl"
-    })
-    .when("/hob", {
-        templateUrl : "/modules/hobbies/hob.html",
-        controller: "hobctrl"
     })
     .when("/signin", {
         templateUrl : "/modules/signin/signin.html",
         controller: "signinctrl"
     })
-    .when('/display', {
-            templateUrl: '/modules/contactdisp/display.html',
-            controller: "disctrl"      
-    })
-     .otherwise({
+    .otherwise({
         "redirectTo":'/home'
     })  
     $locationProvider.html5Mode(true);
