@@ -2,23 +2,23 @@ var app = angular.module("resume", ["ngRoute","contactapp","signinapp"]);
 app.config(function($routeProvider,$locationProvider) {
     $routeProvider
     .when("/abt", {
-        templateUrl :"/modules/abt/abt.html"
+        templateUrl :"modules/abt/abt.html"
     })
     .when("/home",{
-        templateUrl :"/modules/home/home.html"
+        templateUrl :"modules/home/home.html"
     })
     .when("/pro", {
-        templateUrl : "/modules/pro/pro.html"
+        templateUrl : "modules/pro/pro.html"
     })
     .when("/qual", {
-        templateUrl : "/modules/qual/qual.html"
+        templateUrl : "modules/qual/qual.html"
     })
     .when("/co", {
-        templateUrl : "/modules/contact/co.html",
+        templateUrl : "modules/contact/co.html",
         controller: "ctctrl"
     })
     .when("/signin", {
-        templateUrl : "/modules/signin/signin.html",
+        templateUrl : "modules/signin/signin.html",
         controller: "signinctrl"
     })
     .otherwise({
